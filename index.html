@@ -9,9 +9,10 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
 
     <title>Projeto - Hamburgueria.</title>
 </head>
@@ -19,7 +20,8 @@
 <body>
 
     <!--header  -->
-    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center" img src="assets/bg-home.jpg"
+        alt="bg-header">
         <div class="w-full h-full flex flex-col justify-center items-center">
             <img src="assets/hamb-1.png" alt="logo hamburgueria"
                 class="w-32 h32 rounded-full shadow-lg hover:scale-110 duration-200" />
@@ -40,12 +42,12 @@
     <h2 class="text 2xl md:tex-3xl font-bold text-center mt-9 mb-6">Conheça nosso cardápio</h2>
     <div class="mx-auto max-w-7xl px-2 my-2">
 
-        <h2 class="font-bold text-3xl">
-            Hamburguers
-        </h2>
+        <div id="menu">
+            <h2 class="font-bold text-3xl">
+                Hamburguers
+            </h2>
 
-    </div>
-    <div id="menu">
+        
         <main class="grid grid-cols-1 md:grid-cols-2 gap- md:gap-10 mx-auto max-w-7xl px-2 mb-16">
 
             <!--produto item-->
@@ -142,64 +144,64 @@
             <!--fim produto4 -->
 
         </main>
+    </div>
+    <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="font-bold text-3xl">
+            Bebidas
+        </h2>
+    </div>
 
-        <div class="mx-auto max-w-7xl px-2 my-2">
-            <h2 class="font-bold text-3xl">
-                Bebidas
-            </h2>
+    <!--grid bebidas-->
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap- md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="">
+
+        <!--produto item1-bebidas -->
+        <div class="flex gap-2 w-full">
+            <img src="./assets/refri-1.png" alt="Refri-1"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+            <div class="w-full">
+                <p class="font-bold">Coca-Cola </p>
+
+                <div class=" flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg"> R$5,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Refri-1" data-price="5.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+
+                </div>
+
+            </div>
         </div>
-
-        <!--grid bebidas-->
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap- md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="">
-
-            <!--produto item1-bebidas -->
+        <!--fim produto1-bebidas -->
+        <!--produto item1-bebidas -->
+        <div class="flex gap-2">
             <div class="flex gap-2 w-full">
-                <img src="./assets/refri-1.png" alt="Refri-1"
+                <img src="./assets/refri-2.png" alt="Refri-2"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
                 <div class="w-full">
-                    <p class="font-bold">Coca-Cola </p>
-
+                    <p class="font-bold">Guaraná</p>
+    
                     <div class=" flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg"> R$5,00</p>
                         <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Refri-1" data-price="5.00">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
 
-                    </div>
-
                 </div>
+
             </div>
-            <!--fim produto1-bebidas -->
-            <!--produto item1-bebidas -->
-            <div class="flex gap-2">
-                <img src="./assets/refri-2.png" alt="refri-2"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
-                <div>
-                    <p class="font-bold">Guaraná </p>
-
-
-                    <div class=" flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg"> R$5,00</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Refri-2" data-price="5.00">
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-
-                    </div>
-
-                </div>
-            </div>
-            <!--fim produto1-bebidas -->
-
         </div>
+        <!--fim produto1-bebidas -->
 
-        <!--fim grid bebidas-->
+    </div>
+
+    <!--fim grid bebidas-->
 
     </div>
     <!--fim menu-->
     <!--modal card-->
     <div class="bg-black/50 w-full h-full fixed top-0 left-0- z-[99] items-center justify-center hidden"
-    id="cart-modal">
+        id="cart-modal">
 
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             <h2 class="text-center font-bold tex-2xl mb-2">Meu carrinho</h2>
@@ -239,8 +241,6 @@
         </button>
 
     </footer>
-
-
 
     <script src="script.js"></script>
 </body>
